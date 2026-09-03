@@ -1,0 +1,210 @@
+/* =========================
+   GENERAL STYLES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    color: #222;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+header {
+    background: #111;
+    padding: 15px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #ddd;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #111,
+        #333
+    );
+}
+
+.hero-content {
+    color: white;
+    max-width: 650px;
+}
+
+.hero-content h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+
+/* SHOP BUTTON */
+
+.shop-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: white;
+    color: #111;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.shop-btn:hover {
+    background: #ddd;
+}
+
+
+/* =========================
+   PRODUCTS SECTION
+========================= */
+
+.products-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.products-section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+/* PRODUCT LIST */
+
+.product-List {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+
+/* PRODUCT ITEMS CREATED BY JAVASCRIPT */
+
+.product-List p {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about {
+    background: #222;
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.about p {
+    max-width: 650px;
+    margin: auto;
+    color: white;
+}
+.about h4 {
+    font-size: 20px;
+    color: white;
+}
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .product-List {
+        grid-template-columns: 1fr;
+    }
+}
